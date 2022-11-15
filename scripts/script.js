@@ -19,7 +19,12 @@
 let r = prompt("Enter a radius. ");
 
 function circleArea(radius){
-    return Math.PI * radius * radius;
+    let radiusP = document.querySelector("#radius");
+    let resultP = document.querySelector("#result");
+    radiusP.textContent = radius;
+    let calculatedArea = Math.PI * radius * radius;
+    resultP.textContent = calculatedArea.toFixed(2);
+    return calculatedArea
 }
 
 let area = circleArea(r).toFixed(2);
