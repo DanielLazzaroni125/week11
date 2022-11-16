@@ -1,0 +1,11 @@
+.circlelist{
+    list-style-type: circle;
+}
+
+.squarelist{
+    list-style-type: square;
+}
+
+.green{
+    color: green;
+}
