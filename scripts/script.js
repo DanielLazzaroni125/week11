@@ -41,7 +41,7 @@ function populateList(list){
     }
 }
 
-const shoppingList = ["cheese", "bread", "pepper"];
+const shoppingList = ["cheese", "bread", "green pepper"];
 populateList(shoppingList)
 
 function changeListStyle(){
@@ -50,3 +50,14 @@ function changeListStyle(){
 }
 
 changeListStyle()
+
+const listItems = document.querySelectorAll(".shopping li");
+
+function greenItem(){
+    for(let i = 0; i < listItems.length; i++){
+        if(listItems[i].textContent.includes("green")){
+            listItems[i].classList.add("green");
+        }
+    }
+}
+greenItem();
